@@ -11,8 +11,6 @@
 .pabotsuitenames
 .vscode
 
-var.robot
 .DS_Store
 __pycache__
 .idea/
-**/utils/config.robot 
