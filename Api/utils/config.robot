@@ -15,3 +15,5 @@ ${topupid}              topupid
 ${PABOTQUEUEINDEX}      ${EMPTY}
 
 ${domainCloud}          hub-cloud.browserstack.com
+${usernameCloud}        otomatinguji_2FnRer
+${apiKeyCloud}          UTDxUswfLWPkyBmGtot9

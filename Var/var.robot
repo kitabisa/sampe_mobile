@@ -1,9 +1,8 @@
 *** Variable ***
 #Capabilities
 ${appiumLocal}          http://127.0.0.1:4723/wd/hub
-# ${app}                  /Users/kitabisa.com/Documents/MobileUI-staging-debug.apk
-${platformVersion}      8.1.0
-${isCloud}              false
+${app}                  /Users/kitabisa.com/Documents/MobileUI-staging-debug.apk
+${platformVersion}      9
 
 #Environment
 ${service_env}          stg
