@@ -10,9 +10,8 @@ Resource    ../Api/utils/config.robot
 *** Keywords ***
 Start Application
     ${date}=        Get Current Date    UTC     + 7 hours   result_format=%d-%b-%Y %H:%M
-    ${device}=      Get Available Device    android     ${platformVersion}
     Open Application    https://${usernamecloud}:${apiKeyCloud}@${domainCloud}/wd/hub
-    ...     app=bs://de6cbb260624fdde248c6da28f1421a22486679f
+    ...     app=bs://744b00279ef2d1bdcdd2d021406c4bb0b19cbb34"
     ...     platformName=Android            platformVersion=9.0     device=Samsung Galaxy S10
     ...     newCommandTimeout=60000         noReset=true            autoGrantPermissions=true
     ...     unicodeKeyboard=true            resetKeyboard=true      automationName=uiautomator2

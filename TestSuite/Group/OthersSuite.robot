@@ -40,53 +40,53 @@ User Login with Empty Inbox Email
     [Tags]      login       regression      positive
     Login with Email and Password               ${noInboxEmail}     ${noInboxPassword}
 
-C8747 User View Inbox Menu for Tab Pesan
-    [Tags]      inbox       regression      positive
-    [Documentation]     ${8747}
-    Cek Empty Pesan Page
-
-C8749 User View Inbox Menu for Tab Berita
-    [Tags]      inbox       regression      positive
-    [Documentation]     ${8749}
-    Cek Empty Berita Page
-    Logout Process
-
-User Login with Email
-    [Tags]      login       regression     positive
-    Login with Email and Password                   ${otherEmail}     ${otherPassword}
-
-C11232 Verify All Tiles Menu
-    [Tags]      tiles       regression      positive
-    [Documentation]     ${11232}
-    Validate All Tiles Menu
-
-C8865 Give Recomendation Rate
-    [Tags]    donasi paling cocok        regression    positive
-    [Documentation]     ${8865}
-    Give Recomendation            donasi mania, mantaaaap!
-
-C3749 User See Donation History
-    [Tags]      donasisaya      regression      positive
-    [Documentation]     ${3749}
-    See Donation History
-
-C11231 Verify Wallet on Homepage
-    [Tags]    Homepage    regression    positive
-    [Documentation]     ${11231}
-    Validate Wallet Section on Homepage
-    Validate Topup Wallet on Homepage
-
-C3758 User Successfully Change Account Profile
-    [Tags]      account     regression      positive
-    [Documentation]     ${3758}
-    Change Account Profile                      QA Testing      I'm a tester who tested all the feature
-
-C3764 User View Campaign on Love List
-    [Tags]      lovelist       regression      positive
-    [Documentation]     ${3764}
-    Navigate to Favorite
-
-C11239 User Search Any Campaign
-    [Tags]      search      regression      positive
-    [Documentation]     ${11239}
-    Search Any Campaign         masjid
+#C8747 User View Inbox Menu for Tab Pesan
+#    [Tags]      inbox       regression      positive
+#    [Documentation]     ${8747}
+#    Cek Empty Pesan Page
+#
+#C8749 User View Inbox Menu for Tab Berita
+#    [Tags]      inbox       regression      positive
+#    [Documentation]     ${8749}
+#    Cek Empty Berita Page
+#    Logout Process
+#
+#User Login with Email
+#    [Tags]      login       regression     positive
+#    Login with Email and Password                   ${otherEmail}     ${otherPassword}
+#
+#C11232 Verify All Tiles Menu
+#    [Tags]      tiles       regression      positive
+#    [Documentation]     ${11232}
+#    Validate All Tiles Menu
+#
+#C8865 Give Recomendation Rate
+#    [Tags]    donasi paling cocok        regression    positive
+#    [Documentation]     ${8865}
+#    Give Recomendation            donasi mania, mantaaaap!
+#
+#C3749 User See Donation History
+#    [Tags]      donasisaya      regression      positive
+#    [Documentation]     ${3749}
+#    See Donation History
+#
+#C11231 Verify Wallet on Homepage
+#    [Tags]    Homepage    regression    positive
+#    [Documentation]     ${11231}
+#    Validate Wallet Section on Homepage
+#    Validate Topup Wallet on Homepage
+#
+#C3758 User Successfully Change Account Profile
+#    [Tags]      account     regression      positive
+#    [Documentation]     ${3758}
+#    Change Account Profile                      QA Testing      I'm a tester who tested all the feature
+#
+#C3764 User View Campaign on Love List
+#    [Tags]      lovelist       regression      positive
+#    [Documentation]     ${3764}
+#    Navigate to Favorite
+#
+#C11239 User Search Any Campaign
+#    [Tags]      search      regression      positive
+#    [Documentation]     ${11239}
+#    Search Any Campaign         masjid
