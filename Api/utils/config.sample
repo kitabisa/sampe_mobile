@@ -14,4 +14,4 @@ ${transactionid}        transactionid
 ${topupid}              topupid
 ${PABOTQUEUEINDEX}      ${EMPTY}
 
-${hostKobiton}          https://api.kobiton.com
+${domainCloud}          hub-cloud.browserstack.com
