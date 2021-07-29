@@ -19,7 +19,7 @@ Start Application on Cloud
     ${date}=        Get Current Date    UTC     + 7 hours   result_format=%d-%b-%Y %H:%M
     ${deviceName}   ${osVersion}        Get Available Device
     Open Application    https://${usernamecloud}:${apiKeyCloud}@${domainCloud}/wd/hub
-    ...     app=bs://${appId}
+    ...     app=${appId}
     ...     platformName=android            platformVersion=${osVersion}    device=${deviceName}
     ...     newCommandTimeout=60000         noReset=true                    autoGrantPermissions=true
     ...     unicodeKeyboard=true            resetKeyboard=true              automationName=uiautomator2
