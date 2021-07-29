@@ -4,7 +4,6 @@ Library     DateTime
 
 Resource    ../Var/var.robot
 Resource    ../Api/cloud/getAvailableDevice.robot
-Resource    ../Api/cloud/removeApps.robot
 Resource    ../Api/utils/config.robot
 
 *** Keywords ***

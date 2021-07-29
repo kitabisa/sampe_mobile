@@ -23,7 +23,6 @@ Suite Teardown      After Suite
 After Suite
     Remove Application      com.kitabisa.android.staging
     Close Application
-    Remove Application on Cloud
 
 *** Test Case ***
 User Login with Email and Password
