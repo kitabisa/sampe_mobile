@@ -68,8 +68,8 @@ C3676 User Register with Existing Email
 #    [Documentation]     ${3681}
 #    Register using Email with Invalid Confirm Password          ${emailToRegis}         ${nameToRegis}
 #
-#C3682 User Register with Email
-#    [Tags]      register        regression      positive
-#    [Documentation]     ${3682}
-#    Register with Email                                         ${emailToRegis}         ${nameToRegis}
-#    Logout Process
+C3682 User Register with Email
+    [Tags]      register        regression      positive
+    [Documentation]     ${3682}
+    Register with Email                                         ${emailToRegis}         ${nameToRegis}
+    Logout Process
