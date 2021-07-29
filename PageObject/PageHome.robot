@@ -35,10 +35,12 @@ ${searchTextBox}                id=com.kitabisa.android.staging:id/buttonSearch
 ${closeTutorial}                xpath=//*[@text="Mulai sekarang!"]
 ${skipOnboaringButton}          id=com.kitabisa.android.staging:id/button_skip
 ${tutorialStartButton}          id=com.kitabisa.android.staging:id/buttonStart
+${onboardCategoryText}          Pilih tiga penggalangan dana yang ingin kamu bantu!
 ${bantuanPendidikan}            xpath=//*[@text="Bantuan Pendidikan"]
 ${categoryBalita}               xpath=//*[@text="Balita & Anak Sakit"]
 ${categoryMedis}                xpath=//*[@text="Bantuan Medis & Kesehatan"]
 ${categoryNextButton}           id=com.kitabisa.android.staging:id/buttonNext
+${onboardDonationSkip}          id=com.kitabisa.android.staging:id/buttonSkip
 ${reminderWhitch}               id=com.kitabisa.android.staging:id/switchReminder
 ${nextReminderButton}           id=com.kitabisa.android.staging:id/buttonSaveReminder
 ${setZakatNoOption}             id=com.kitabisa.android.staging:id/radioButtonZakatNo
@@ -333,14 +335,12 @@ Click Allow on Permission Pop Up
     Run Keyword If  '${result}'=='True'                 Click Element                       ${permissionPopUp}
 
 Click Tutorial Start Button
-    ${result}=      run keyword and return status       Wait Until Page Contains Element    ${tutorialStartButton}      timeout=3
-    run keyword if  '${result}'=='True'                 Run Keywords        Click Element   ${tutorialStartButton}
-    ...     AND     Click Bantuan Pendidikan
+    ${result}=      run keyword and return status       wait until page contains            ${onboardCategoryText}      timeout=5
+    run keyword if  '${result}'=='True'                 Run Keywords                        Click Bantuan Pendidikan
     ...     AND     Click Balita Category
     ...     AND     Click Medis Category
     ...     AND     PageHome.Click Lanjut Button
-    ...     AND     Switch Donation Reminder to Off
-    ...     AND     Choose No Zakat Option
+    ...     AND     Click Skip First Donation
 
 Click Bantuan Pendidikan
     wait until page contains element    ${bantuanPendidikan}
@@ -357,6 +357,10 @@ Click Medis Category
 Click Lanjut Button
     wait until page contains element    ${categoryNextButton}
     click element                       ${categoryNextButton}
+
+Click Skip First Donation
+    wait until page contains element    ${onboardDonationSkip}
+    click element                       ${onboardDonationSkip}
 
 Click See All Kategori Pilihan
     Scroll Down to Element              ${viewAllCategoryPilihan}       ${homepagecontainer}

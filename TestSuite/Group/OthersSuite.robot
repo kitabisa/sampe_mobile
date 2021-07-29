@@ -34,16 +34,17 @@ Suite Teardown      After Suite
 After Suite
     Remove Application      com.kitabisa.android.staging
     Close Application
+    Remove Application on Cloud
 
 *** Test Case ***
 User Login with Empty Inbox Email
     [Tags]      login       regression      positive
     Login with Email and Password               ${noInboxEmail}     ${noInboxPassword}
 
-#C8747 User View Inbox Menu for Tab Pesan
-#    [Tags]      inbox       regression      positive
-#    [Documentation]     ${8747}
-#    Cek Empty Pesan Page
+C8747 User View Inbox Menu for Tab Pesan
+    [Tags]      inbox       regression      positive
+    [Documentation]     ${8747}
+    Cek Empty Pesan Page
 #
 #C8749 User View Inbox Menu for Tab Berita
 #    [Tags]      inbox       regression      positive

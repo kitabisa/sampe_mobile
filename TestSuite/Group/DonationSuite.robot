@@ -23,17 +23,18 @@ Suite Teardown      After Suite
 After Suite
     Remove Application      com.kitabisa.android.staging
     Close Application
+    Remove Application on Cloud
 
 *** Test Case ***
 User Login with Email and Password
     [Tags]      login       regression      positive
     Login with Email and Password               ${donationEmail}        ${donationPassword}
 
-#C3711 User Create Bank Donation Using Bank Transfer with Amount Less Than Minimum Required
-#    [Tags]      donation        regression      negative
-#    [Documentation]     ${3711}
-#    Choose Campaign
-#    Create Bank Donation with Amount Less Than Minimum Required      5000    bca
+C3711 User Create Bank Donation Using Bank Transfer with Amount Less Than Minimum Required
+    [Tags]      donation        regression      negative
+    [Documentation]     ${3711}
+    Choose Campaign
+    Create Bank Donation with Amount Less Than Minimum Required      5000    bca
 #
 #C3713 User Create Bank Donation using BCA
 #    [Tags]      donation        regression      positive

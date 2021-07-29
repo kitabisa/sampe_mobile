@@ -19,16 +19,17 @@ Suite Teardown      After Suite
 After Suite
     Remove Application      com.kitabisa.android.staging
     Close Application
+    Remove Application on Cloud
 
 *** Test Case ***
 User Login with Email and Password
     [Tags]      login       regression      positive
     Login with Email and Password               ${zakatEmail}     ${zakatPassword}
 
-#C3729 User Distribute Zakat with Amount Less Than Minimum Required using Bank Transfer
-#    [Tags]      zakat       regression      negative
-#    [Documentation]     ${3729}
-#    Distribute Zakat with Amount Less Than Minimum Required     Rumah Zakat       bca
+C3729 User Distribute Zakat with Amount Less Than Minimum Required using Bank Transfer
+    [Tags]      zakat       regression      negative
+    [Documentation]     ${3729}
+    Distribute Zakat with Amount Less Than Minimum Required     Rumah Zakat       bca
 #
 #C3730 User Distribute Zakat to Organization using BCA Bank Transfer
 #    [Tags]      zakat       regression      positive

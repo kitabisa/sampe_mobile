@@ -12,7 +12,7 @@ Pre Login Action
     Verify Login Page
     
 Post Login Action
-    Skip Onboarding
+    Click Tutorial Start Button
     Click Allow on Permission Pop Up
     Verify Home Page
 
